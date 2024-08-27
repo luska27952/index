@@ -7,13 +7,16 @@
     }
     audio {
             width: 100%;
-            max-width: 300px; 
+            max-width: 300px;
         }
 
-        
+        /* Aumentar o tamanho dos controles em dispositivos móveis */
         @media (max-width: 600px) {
             audio {
                 max-width: 100%;
+                transform: scale(1.5); /* Aumenta o tamanho dos controles */
+                transform-origin: center; /* Centraliza o aumento */
+                height: 60px; /* Ajusta a altura do elemento de áudio */
             }
         }
     
